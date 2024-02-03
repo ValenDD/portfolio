@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-image: url('./assets/img/backgroundweb.webp');
   color: #fff !important;
   font-family: 'Oswald', sans-serif;
 }
@@ -221,7 +221,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/backgroundweb.webp');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,14 +305,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   position: relative;
 }
+
 .skill-bx {
-  background: #151515;
+  background-image: url('./assets/img/backgroundweb.webp');
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
 .skill h2 {
+  opacity: 1;
 	font-size: 45px;
 	font-weight: 700;
 }
@@ -328,6 +329,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+}
+.skill-slider .item {
+  text-align: center;
+  padding: 0 20px;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+.skill-slider .item:hover {
+  opacity: 1;
 }
 .skill-slider .item img {
   width: 50%;
