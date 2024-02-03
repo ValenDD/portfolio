@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { ArrowRightCircule } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/header-img.svg';
+import headerImg from '../assets/img/2.png';
 import { useState, useEffect } from "react";
 import { Row, Col } from 'react-bootstrap';
 
@@ -14,8 +14,8 @@ export const Banner = () => {
     const period = 3000;
 
     useEffect(() => {
-        let ticker = setInterval(() => {
-        tick();
+            let ticker = setInterval(() => {
+            tick();
         }, delta);
 
         return () => { clearInterval(ticker) };
@@ -29,20 +29,20 @@ export const Banner = () => {
         setText(updatedText);
 
         if (isDeleting) {
-        setDelta(prevDelta => prevDelta / 2);
+            setDelta(prevDelta => prevDelta / 2);
         }
 
         if (!isDeleting && updatedText === fullText) {
-        setIsDeleting(true);
-        setIndex(prevIndex => prevIndex - 1);
-        setDelta(period);
+            setIsDeleting(true);
+            setIndex(prevIndex => prevIndex - 1);
+            setDelta(period);
         } else if (isDeleting && updatedText === '') {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setIndex(1);
-        setDelta(500);
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setIndex(1);
+            setDelta(500);
         } else {
-        setIndex(prevIndex => prevIndex + 1);
+            setIndex(prevIndex => prevIndex + 1);
         }
     }
 
@@ -56,7 +56,7 @@ export const Banner = () => {
                         <p className="subTagLine">I'm a developer based in Montevideo, Uruguay. I'm passionate about developing projects with any type of technology as i have a lot of flexibility when it comes to learning a new one.</p>
                         <button onClick={() => console.log('connect')}>Let's Connect</button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6} xl={5} className="custom-col-container">
                         <img src={headerImg} alt="Headder Img" />
                     </Col>
                 </Row>
