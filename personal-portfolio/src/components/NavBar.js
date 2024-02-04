@@ -1,32 +1,39 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import navBarIcon1 from '../assets/img/linkedin-logo.svg';
 import navBarIcon2 from '../assets/img/github-logo.png';
 
 export const NavBar = () => {
-
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [prevScrollPos, setPrevScrollPos] = useState(0); // New state to track the previous scroll position
+    const [visible, setVisible] = useState(true); // New state to control navbar visibility
 
     useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        }
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
 
-        window.addEventListener("scroll", onScroll);
+            // Set scrolled state based on scroll position for styling
+            setScrolled(currentScrollPos > 50);
 
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [])
+            // Determine navbar visibility
+            setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70)
+                || currentScrollPos < 10);
+
+            // Update the previous scroll position
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, scrolled]);
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
-    }
+    };
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+        <Navbar expand="lg" className={`${scrolled ? "scrolled" : ""} ${visible ? "" : "navbar-hidden"}`}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>

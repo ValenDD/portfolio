@@ -5,28 +5,28 @@ export const Skills = () => {
     return (
         <section id="skills" className="skills">
             <Container>
-                <p>Technology and Softskills</p>
-                <Row>
-                    <div className="skills-bx">
-                        <Col>
-                            <Card style={{ width: '18rem' }}>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>SQL</ListGroup.Item>
-                                    <ListGroup.Item>Python</ListGroup.Item>
-                                    <ListGroup.Item>Java</ListGroup.Item>
-                                </ListGroup>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card style={{ width: '18rem' }}>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                                </ListGroup>
-                            </Card>
-                        </Col>
-                    </div>
+                <h2>Skills</h2>
+                <Row className="justify-content-md-center">
+                    <Col xs={12} md={4}>
+                        <ListGroup>
+                            <ListGroup.Item>Java</ListGroup.Item>
+                            <ListGroup.Item>JSP</ListGroup.Item>
+                            <ListGroup.Item>JPA</ListGroup.Item>
+                            <ListGroup.Item>JUnit</ListGroup.Item>
+                            <ListGroup.Item>Servlets</ListGroup.Item>
+                            <ListGroup.Item>Webservices</ListGroup.Item>
+                        </ListGroup>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <ListGroup>
+                            <ListGroup.Item>Python</ListGroup.Item>
+                            <ListGroup.Item>React</ListGroup.Item>
+                            <ListGroup.Item>SQL</ListGroup.Item>
+                            <ListGroup.Item>Godot</ListGroup.Item>
+                            <ListGroup.Item>Regular Expressions</ListGroup.Item>
+                            <ListGroup.Item>Design Pattern</ListGroup.Item>
+                        </ListGroup>
+                    </Col>
                 </Row>
             </Container>
         </section>
