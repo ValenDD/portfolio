@@ -1,8 +1,9 @@
-import { Container } from "react-bootstrap";
-import { ArrowRightCircule } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/computer.png';
 import { useState, useEffect } from "react";
-import { Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from '../assets/img/computer.png';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +12,7 @@ export const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
     const toRotate = ["Backend Developer", "Fullstack Developer", "Functional Analyst"];
-    const period = 3000;
+    const period = 2000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -47,16 +48,27 @@ export const Banner = () => {
     }
 
     return (
-        <section id="home" className="banner">
+        <section className="banner" id="home">
             <Container>
-                <Row className="align-tems-center">
+                <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagLine">Hello, I'm Valentin Dutra</span>
-                        <h1>{"Hi I'm "}<span className="wrap">{text}</span></h1>
-                        <p className="subTagLine">I'm a developer based in Montevideo, Uruguay. I'm passionate about developing projects with any type of technology as i have a lot of flexibility when it comes to learning a new one.</p>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                    <span className="tagline">Welcome to my Portfolio</span>
+                                    <h1>{`Hi! I'm Valentin`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                                    <p>I'm a developer based in Montevideo, Uruguay. I'm passionate about developing projects with any type of technology as i have a lot of flexibility when it comes to learning a new one.</p>
+                                    <p>I am studying Software Engineering at the University of the Republic, currently in my seventh semester.</p>
+                                </div>}
+                        </TrackVisibility>
                     </Col>
-                    <Col xs={12} md={6} xl={5} className="custom-col-container">
-                        <img src={headerImg} alt="Headder Img" />
+                    <Col xs={12} md={6} xl={5}>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                                    <img src={headerImg} alt="Header Img" />
+                                </div>}
+                        </TrackVisibility>
                     </Col>
                 </Row>
             </Container>

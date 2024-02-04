@@ -25,36 +25,35 @@ export const ProjectSlider = () => {
     };
 
     return (
-        <section id="skills" className="projects">
+        <section id="projects" className="projects">
             <Container>
                 <Row>
-                    <Col>
+                    <Col className="col-border">
                         <div className="projects-bx">
                             <h2>Projects</h2>
-                            <br></br>
                             <br></br>
                             <Carousel responsive={responsive} infinite={true} className="projects-slider">
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
-                                        <img src={project} alt="Image" />
+                                        <img src={project} alt="ImageFullstack" />
                                     </a>
                                     <h5><a className="projects-links" href="https://github.com/ValenDD/TrabajoUy" target="_blank" rel="noopener noreferrer">Fullstack</a></h5>
                                 </div>
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
-                                        <img src={game_godot} alt="Image" />
+                                        <img src={game_godot} alt="ImageGame" />
                                     </a>
                                     <h5><a className="projects-links" href="https://github.com/ValenDD/GGJUY2024" target="_blank" rel="noopener noreferrer">Game development</a></h5>
                                 </div>
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
-                                        <img src={project} alt="Image" />
+                                        <img src={project} alt="ImageC++" />
                                     </a>
                                     <h5><a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">Simple C++ Project</a></h5>
                                 </div>
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/Regular-Expressions" target="_blank" rel="noopener noreferrer">
-                                        <img src={project} alt="Image" />
+                                        <img src={project} alt="ImageExpressions" />
                                     </a>
                                     <h5><a className="projects-links" href="https://github.com/ValenDD/Regular-Expressions" target="_blank" rel="noopener noreferrer">Regular Expressions Compiler</a></h5>
                                 </div>
