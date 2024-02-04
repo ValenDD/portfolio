@@ -10,11 +10,11 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Backend Developer", "Fullstack Developer", "Functional Analyst" ];
+    const toRotate = ["Backend Developer", "Fullstack Developer", "Functional Analyst"];
     const period = 3000;
 
     useEffect(() => {
-            let ticker = setInterval(() => {
+        let ticker = setInterval(() => {
             tick();
         }, delta);
 
@@ -54,7 +54,6 @@ export const Banner = () => {
                         <span className="tagLine">Hello, I'm Valentin Dutra</span>
                         <h1>{"Hi I'm "}<span className="wrap">{text}</span></h1>
                         <p className="subTagLine">I'm a developer based in Montevideo, Uruguay. I'm passionate about developing projects with any type of technology as i have a lot of flexibility when it comes to learning a new one.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect</button>
                     </Col>
                     <Col xs={12} md={6} xl={5} className="custom-col-container">
                         <img src={headerImg} alt="Headder Img" />
@@ -62,5 +61,5 @@ export const Banner = () => {
                 </Row>
             </Container>
         </section>
-);
+    );
 }
