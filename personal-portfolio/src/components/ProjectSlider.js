@@ -25,26 +25,32 @@ export const ProjectSlider = () => {
     };
 
     return (
-        <section id="s  kills" className="skills">
+        <section id="skills" className="projects">
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
-                            <h2>Projects Resume</h2>
+                        <div className="projects-bx">
+                            <h2>Projects</h2>
                             <br></br>
                             <br></br>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel responsive={responsive} infinite={true} className="projects-slider">
                                 <div className="item">
-                                    <img src={project} alt="Image" />
-                                    <h5>trabajoUy</h5>
+                                    <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
+                                        <img src={project} alt="Image" />
+                                    </a>
+                                    <h5><a className="projects-links" href="https://github.com/ValenDD/TrabajoUy" target="_blank" rel="noopener noreferrer">Fullstack</a></h5>
                                 </div>
                                 <div className="item">
-                                    <img src={game_godot} alt="Image" />
-                                    <h5>Laughter of Madness</h5>
+                                    <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
+                                        <img src={game_godot} alt="Image" />
+                                    </a>
+                                    <h5><a className="projects-links" href="https://github.com/ValenDD/GGJUY2024" target="_blank" rel="noopener noreferrer">Game development</a></h5>
                                 </div>
                                 <div className="item">
-                                    <img src={project} alt="Image" />
-                                    <h5> C++ Backend</h5>
+                                    <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
+                                        <img src={project} alt="Image" />
+                                    </a>
+                                    <h5><a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">Simple C++ Project</a></h5>
                                 </div>
                             </Carousel>
                         </div>
