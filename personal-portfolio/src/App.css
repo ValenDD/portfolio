@@ -321,7 +321,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   color: #fff;
   border:none;
-  border-bottom: 2px solid #444;
   display: flex;
   align-items: center;
   justify-content: center;
