@@ -37,7 +37,7 @@ export const ProjectSlider = () => {
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
                                         <img src={project} alt="ImageFullstack" />
                                     </a>
-                                    <h5><a className="projects-links" href="https://github.com/ValenDD/TrabajoUy" target="_blank" rel="noopener noreferrer">Fullstack</a></h5>
+                                    <h5><a className="projects-links" href="https://github.com/ValenDD/TrabajoUy" target="_blank" rel="noopener noreferrer">Java</a></h5>
                                 </div>
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">

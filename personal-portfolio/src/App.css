@@ -225,19 +225,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*Banner*/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 180px 0 60px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
 }
 .banner h1 {
   font-size: 55px;
@@ -304,9 +295,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center; /* Centra verticalmente si lo necesitas */
 }
 
+/*Skills*/
+.skills {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skills-section {
+  background-color: transparent;
+  border: none;
+  padding: 2rem;
+}
+.skills-section h2 {
+  text-align: center;
+  opacity: 0.9;
+  font-size: 35px;
+  font-weight: 600;
+  color: #B8B8B8;
+}
+.fashionable-list {
+  background-color: transparent !important;
+  border: none;
+}
+
+.fashionable-list .list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border:none;
+  border-bottom: 2px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
 /*Projects*/
 .projects {
-  padding: 0 0 50px 0;
+  padding-top: 25px;
   position: relative;
 }
 .projects-links {
@@ -361,21 +385,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/*Skills*/
-.skills {
-  padding: 0 0 50px 0;
-  position: relative;
-}
-.skills-bx {
-  border-radius: 55px;
-  text-align: center;
-  padding: 15px 10px;
-  margin-top: -60px;
-  width: 85%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 /*Footer*/
 .footer {
   display: flex;
@@ -385,6 +394,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding-top: 25px;
 }
 .CopyRight{
   text-align: center;
