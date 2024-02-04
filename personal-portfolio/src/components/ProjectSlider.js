@@ -52,6 +52,12 @@ export const ProjectSlider = () => {
                                     </a>
                                     <h5><a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">Simple C++ Project</a></h5>
                                 </div>
+                                <div className="item">
+                                    <a className="projects-links" href="https://github.com/ValenDD/Regular-Expressions" target="_blank" rel="noopener noreferrer">
+                                        <img src={project} alt="Image" />
+                                    </a>
+                                    <h5><a className="projects-links" href="https://github.com/ValenDD/Regular-Expressions" target="_blank" rel="noopener noreferrer">Regular Expressions Compiler</a></h5>
+                                </div>
                             </Carousel>
                         </div>
                     </Col>
