@@ -31,7 +31,7 @@ export const Skills = () => {
                     <Col md={4}>
                         <ListGroup className="fashionable-list">
                             <ListGroup.Item>Webservices</ListGroup.Item>
-                            <ListGroup.Item>Design Pattern</ListGroup.Item>
+                            <ListGroup.Item>Design Patterns</ListGroup.Item>
                             <ListGroup.Item>GitHub</ListGroup.Item>
                             <ListGroup.Item>Scrum</ListGroup.Item>
                             <ListGroup.Item>HTML/CSS</ListGroup.Item>
