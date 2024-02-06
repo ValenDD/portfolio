@@ -326,6 +326,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   height: 3rem;
 }
+.link-skills {
+  color: inherit;
+  text-decoration: none;
+}
+.link-skills:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
 
 /*Projects*/
 .projects {
