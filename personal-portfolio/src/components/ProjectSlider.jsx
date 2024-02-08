@@ -43,7 +43,7 @@ export const ProjectSlider = () => {
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
                                         <img src={game_godot} alt="ImageGame" />
                                     </a>
-                                    <h5><a className="projects-links" href="https://github.com/ValenDD/GGJUY2024" target="_blank" rel="noopener noreferrer">Game development</a></h5>
+                                    <h5><a className="projects-links" href="https://globalgamejam.org/games/2024/laughter-madness-5" target="_blank" rel="noopener noreferrer">Game development</a></h5>
                                 </div>
                                 <div className="item">
                                     <a className="projects-links" href="https://github.com/ValenDD/AprendeIdiomas" target="_blank" rel="noopener noreferrer">
