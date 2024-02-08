@@ -32,7 +32,7 @@ export const Skills = () => {
                         <ListGroup className="fashionable-list">
                             <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">Webservices</a></ListGroup.Item>
                             <ListGroup.Item>Design Patterns</ListGroup.Item>
-                            <ListGroup.Item>GitHub</ListGroup.Item>
+                            <ListGroup.Item><a href="https://github.com/ValenDD?tab=repositories" className="link-skills" target="_blank" rel="noopener noreferrer">GitHub</a></ListGroup.Item>
                             <ListGroup.Item>Scrum</ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">HTML/CSS</a></ListGroup.Item>
                             <ListGroup.Item>Software Architect</ListGroup.Item>
