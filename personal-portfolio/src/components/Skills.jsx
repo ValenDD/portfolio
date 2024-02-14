@@ -16,6 +16,7 @@ export const Skills = () => {
                             <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">JUnit</a></ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">Servlets</a></ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">Bootstrap</a></ListGroup.Item>
+                            <ListGroup.Item><a href="https://github.com/ValenDD/TrabajoUy" className="link-skills" target="_blank" rel="noopener noreferrer">Maven</a></ListGroup.Item>
                         </ListGroup>
                     </Col>
                     <Col md={4}>
@@ -26,6 +27,7 @@ export const Skills = () => {
                             <ListGroup.Item><a href="https://github.com/ValenDD/GGJUY2024" className="link-skills" target="_blank" rel="noopener noreferrer">Godot</a></ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/Regular-Expressions" className="link-skills" target="_blank" rel="noopener noreferrer">Regular Expressions</a></ListGroup.Item>
                             <ListGroup.Item>Database Optimization</ListGroup.Item>
+                            <ListGroup.Item>PostgreSQL</ListGroup.Item>
                         </ListGroup>
                     </Col>
                     <Col md={4}>
