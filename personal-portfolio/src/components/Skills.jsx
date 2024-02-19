@@ -21,13 +21,13 @@ export const Skills = () => {
                     </Col>
                     <Col md={4}>
                         <ListGroup className="fashionable-list">
-                            <ListGroup.Item>Python</ListGroup.Item>
+                            <ListGroup.Item><a href="https://github.com/ValenDD/Desktop_app_mechanical_workshop" className="link-skills" target="_blank" rel="noopener noreferrer">Python</a></ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/portfolio" className="link-skills" target="_blank" rel="noopener noreferrer">React</a></ListGroup.Item>
                             <ListGroup.Item>SQL</ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/GGJUY2024" className="link-skills" target="_blank" rel="noopener noreferrer">Godot</a></ListGroup.Item>
                             <ListGroup.Item><a href="https://github.com/ValenDD/Regular-Expressions" className="link-skills" target="_blank" rel="noopener noreferrer">Regular Expressions</a></ListGroup.Item>
                             <ListGroup.Item>Database Optimization</ListGroup.Item>
-                            <ListGroup.Item>PostgreSQL</ListGroup.Item>
+                            <ListGroup.Item><a href="https://github.com/ValenDD/Desktop_app_mechanical_workshop" className="link-skills" target="_blank" rel="noopener noreferrer">PostgreSQL</a></ListGroup.Item>
                         </ListGroup>
                     </Col>
                     <Col md={4}>
